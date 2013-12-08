@@ -1,0 +1,65 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theo's Smashing Shop</title>
+    <link rel="stylesheet" href="{% static "css/foundation.css" %}" />
+    <script src="{% static "js/modernizr.js" %}"></script>
+    <script src="{% static "js/vendor/jquery.js" %}"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="small-12 columns">
+            <div class="row">
+                <div class="small-12 hide-for-small">
+                    <div id="logo-large" style="">
+                        <img src="http://placehold.it/400x250/11263B/FFFFFF&text=logo placeholder large" alt="logo placeholder large">
+                    </div>
+                </div>
+                <div class="small-12 show-for-small">
+                    <div id="logo-small" style="">
+                        <img src="http://placehold.it/400x250/11263B/FFFFFF&text=logo placeholder small" alt="logo placeholder small">
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="medium-block-grid-3">
+                <li>
+                    <h4>Articles</h4><hr>
+                    <ul>
+                        <li>Article 1</li>
+                        <li>Article 2</li>
+                        <li>Article 3</li>
+                        <li>Article 4</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Projects</h4><hr>
+                    <ul>
+                        <li>Project A</li>
+                        <li>Project B</li>
+                        <li>Project C</li>
+                    </ul>
+                </li>
+                <li>
+                    <h4>Ideas</h4><hr>
+                    <ul>
+                        <li>Idea A</li>
+                        <li>Idea B</li>
+                        <li>Idea C</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="{% static "js/foundation/foundation.js" %}"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    <!-- End Footer -->
+</body>
+</html>
