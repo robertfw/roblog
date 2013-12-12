@@ -13,10 +13,10 @@
     			<textarea name="text" style="height: 500px">{{article.text}}</textarea>
     		</div>
     		<div class="row">
-    			<button name="destination" value="editor">Save and Stay</button>
-	        	<button name="destination" value="dashboard">Save and Back</button>
+    			<button name="destination" value="editor">Save and stay here</button>
+	        	<button name="destination" value="dashboard">Save then go back to dashboard</button>
     			<input type="hidden" name="visible" value="0" />
-    			<label><input type="checkbox" value="1" name="visible" {% if article.visible %}checked{% endif %} /> Visible</label>
+    			<label><input type="checkbox" value="1" name="visible" {% if article.visible %}checked{% endif %} /> Article is publicly available</label>
 				<div class="danger">
     				Delete?
     				<input type="checkbox" value="yes" name="delete1" />
